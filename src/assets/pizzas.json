@@ -1,0 +1,262 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "https://newvzglyad.ru/wp-content/uploads/2022/10/depositphotos-41466555-l-2015.jpg",
+    "title": "Мексиканская",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 285,
+    "category": 1,
+    "rating": 7
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://kartinkin.net/uploads/posts/2022-07/1657684281_60-kartinkin-net-p-kartinki-s-pitstsei-68.jpg",
+    "title": "Овощи и грибы",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      40
+    ],
+    "price": 385,
+    "category": 2,
+    "rating": 6
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663797384_24-mykaleidoscope-ru-p-bolshaya-pitstsa-na-stole-yeda-vkontakte-28.jpg",
+    "title": "Пеперони",
+    "types": [
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 485,
+    "category": 3,
+    "rating": 8
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663621543_10-mykaleidoscope-ru-p-pitstsa-pepperoni-yeda-vkontakte-10.jpg",
+    "title": "Четыре сыра",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      30,
+      40
+    ],
+    "price": 585,
+    "category": 4,
+    "rating": 6
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://avatars.dzeninfra.ru/get-zen_doc/4790423/pub_60a674221a258e73228aadfa_60a674e2e3b9690bce2911d2/scale_1200",
+    "title": "Супер люкс",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      40
+    ],
+    "price": 685,
+    "category": 1,
+    "rating": 7
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://kartinkin.net/uploads/posts/2022-08/1660759230_41-kartinkin-net-p-pitstsa-motsarella-dzhodzho-yeda-krasivo-f-60.jpg",
+    "title": "Морская",
+    "types": [
+      0
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 285,
+    "category": 2,
+    "rating": 8
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://avatars.dzeninfra.ru/get-zen_doc/4554796/pub_6083e7947b54072a76658a9a_6083e87d3b735b52f853e37b/scale_1200",
+    "title": "Провинциальная",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 285,
+    "category": 5,
+    "rating": 8
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://avatars.dzeninfra.ru/get-zen_doc/3420563/pub_62664cd2f5046662bc3fac00_62665f1ca3226a7e6d4fc3be/scale_1200",
+    "title": "Супер хит",
+    "types": [
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 285,
+    "category": 3,
+    "rating": 8
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://top10a.ru/wp-content/uploads/2020/03/4-54.jpg",
+    "title": "С ананасами",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 295,
+    "category": 1,
+    "rating": 7
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://kartinkin.net/uploads/posts/2022-08/1661412214_1-kartinkin-net-p-chikagskaya-pitstsa-spb-krasivo-1.jpg",
+    "title": "Рыцарская",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      40
+    ],
+    "price": 550,
+    "category": 2,
+    "rating": 6
+  },
+  {
+    "id": 10,
+    "imageUrl": "https://gamerwall.pro/uploads/posts/2022-03/1647945877_5-gamerwall-pro-p-pitstsa-fon-krasivie-6.jpg",
+    "title": "Лёгкая",
+    "types": [
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 350,
+    "category": 3,
+    "rating": 8
+  },
+  {
+    "id": 11,
+    "imageUrl": "http://leykinzakon.ru/wp-content/uploads/2019/04/1512121-3.jpg",
+    "title": "Поджаренная",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      30,
+      40
+    ],
+    "price": 410,
+    "category": 4,
+    "rating": 6
+  },
+  {
+    "id": 12,
+    "imageUrl": "http://klublady.ru/uploads/posts/2022-02/1644918577_68-klublady-ru-p-tort-v-forme-pitstsi-foto-71.jpg",
+    "title": "Экзотик",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      40
+    ],
+    "price": 650,
+    "category": 1,
+    "rating": 7
+  },
+  {
+    "id": 13,
+    "imageUrl": "http://top-fon.com/uploads/posts/2021-07/1626868936_1-p-krasnii-fon-s-pitstsei-1.jpg",
+    "title": "Колбасная",
+    "types": [
+      0
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 285,
+    "category": 2,
+    "rating": 8
+  },
+  {
+    "id": 14,
+    "imageUrl": "https://sun9-17.userapi.com/impf/c636318/v636318506/1ca94/s8XZBfjJEec.jpg?size=1280x853&quality=96&sign=fae1bb4f46e9c79311c87534506f0ea7&c_uniq_tag=DZjxHosJwIir3XbUAJg5j-2ggxS-c5xEaNBqRRWHyIE&type=album",
+    "title": "Пряная",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 290,
+    "category": 5,
+    "rating": 8
+  },
+  {
+    "id": 15,
+    "imageUrl": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663603332_33-mykaleidoscope-ru-p-pitstsa-derevenskaya-vkontakte-36.jpg",
+    "title": "Луковая",
+    "types": [
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 300,
+    "category": 3,
+    "rating": 8
+  }
+]
