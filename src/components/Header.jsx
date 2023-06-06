@@ -2,12 +2,22 @@ import { Link } from "react-router-dom";
 import SearchInp from "../UI/SearchInp/SearchInp";
 import ThemeToggle from "../UI/ThemeToggle";
 import { useSelector } from "react-redux";
+import { useEffect, useRef } from "react";
 
 const Header = () => {
 
   const { items, totalPrice } = useSelector(state => state.cart);
+  const isMounted = useRef(false);
 
   const totalCount = items.reduce((sum, item) => sum + item.count, 0);
+
+  useEffect(() => {
+    if (isMounted.current) {
+      const json = JSON.stringify(items);
+      localStorage.setItem('cart', json);
+    }
+    isMounted.current = true;
+  }, [items])
 
   return (
     <div className="header">
