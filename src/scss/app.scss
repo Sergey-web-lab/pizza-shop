@@ -162,6 +162,12 @@
             display: none;
           }
         }
+
+        &:disabled {
+          cursor: auto;
+          opacity: 0;
+          transition: 1s;
+        }
       }
 
       b {
