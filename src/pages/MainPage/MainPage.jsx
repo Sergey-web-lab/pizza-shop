@@ -1,7 +1,7 @@
 import Sort from '../../components/Sort';
 import Categories from '../../components/Categories';
 import PizzaBlock from '../../components/PizzaBlock';
-import { useEffect, useState, useRef, useContext } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import MyLoader from '../../UI/MyLoader';
 import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
@@ -66,10 +66,30 @@ const MainPage = () => {
     return false;
   }).map(obj => <PizzaBlock key={obj.id} {...obj} />)
 
+  const resetCurrentPage = () => {
+    setCurrentPage(1);
+    const paginationRoot = document.querySelector('.Pagination_root__sdWyf');
+    const listLiInRoot = paginationRoot.querySelectorAll('li');
+    const firstPageLi = listLiInRoot[1];
+
+    const cleanFirstPageLi = () => {
+      firstPageLi.classList.remove('selected');
+    }
+
+    listLiInRoot.forEach((li) => {
+      li.classList.remove('selected');
+      li.addEventListener('click', cleanFirstPageLi)
+    })
+    firstPageLi.classList.add('selected');
+  }
+
+  // console.log(currentPage)
+
+
   return (
     <>
       <div className="content__top">
-        <Categories />
+        <Categories resetCurrentPage={() => resetCurrentPage()} />
         <Sort value={sortType} onChangeSort={(obj) => setSortType(obj)} />
       </div>
       <h2 className="content__title">Все пиццы</h2>

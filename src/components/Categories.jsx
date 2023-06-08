@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setCategoryId } from '../redux/slices/filterSlice';
 
 
-const Categories = () => {
+const Categories = ({ resetCurrentPage }) => {
 
   const categoryId = useSelector((state) => state.filter.categoryId);
   const dispatch = useDispatch();
@@ -10,7 +10,8 @@ const Categories = () => {
   const categories = ['Все', 'Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
 
   function onClickCategorie(i) {
-    dispatch(setCategoryId(i))
+    dispatch(setCategoryId(i));
+    resetCurrentPage();
   }
 
   return (
