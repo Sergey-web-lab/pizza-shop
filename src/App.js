@@ -22,6 +22,7 @@ function App() {
             <div className="container">
               <Routes>
                 <Route path="/" element={<MainPage />} />
+                <Route path="/pizza-shop/" element={<MainPage />} />
                 <Route path="/cart" element={<CartPage />} />
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>
