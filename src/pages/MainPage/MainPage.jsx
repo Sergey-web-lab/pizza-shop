@@ -19,7 +19,7 @@ const MainPage = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
   const [isMounted, setIsMounted] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(0);
   const [sortType, setSortType] = useState({
     name: 'цене (+)', sortProp: 'price'
   });
@@ -33,7 +33,7 @@ const MainPage = () => {
 
     const search = searchValue ? `&search=${searchValue}` : '';
 
-    axios.get(`https://6467dda560c8cb9a2c9ed9e1.mockapi.io/items?page=${currentPage}&limit=4&${categoryId > 0 ? `category=${categoryId}` : ''
+    axios.get(`https://6467dda560c8cb9a2c9ed9e1.mockapi.io/items?page=${currentPage + 1}&limit=4&${categoryId > 0 ? `category=${categoryId}` : ''
       }&sortBy=${sortType.sortProp.replace('-', '')
       }&order=${sortType.sortProp.includes('-') ? 'desc' : 'asc'
       }${search}`)
@@ -67,24 +67,8 @@ const MainPage = () => {
   }).map(obj => <PizzaBlock key={obj.id} {...obj} />)
 
   const resetCurrentPage = () => {
-    setCurrentPage(1);
-    const paginationRoot = document.querySelector('.Pagination_root__sdWyf');
-    const listLiInRoot = paginationRoot.querySelectorAll('li');
-    const firstPageLi = listLiInRoot[1];
-
-    const cleanFirstPageLi = () => {
-      firstPageLi.classList.remove('selected');
-    }
-
-    listLiInRoot.forEach((li) => {
-      li.classList.remove('selected');
-      li.addEventListener('click', cleanFirstPageLi)
-    })
-    firstPageLi.classList.add('selected');
+    setCurrentPage(0);
   }
-
-  // console.log(currentPage)
-
 
   return (
     <>
@@ -101,7 +85,7 @@ const MainPage = () => {
           : pizzas
         }
       </div>
-      <Pagination onChangePage={number => setCurrentPage(number)} />
+      <Pagination currentPage={currentPage} onChangePage={number => setCurrentPage(number)} />
     </>
   );
 }
