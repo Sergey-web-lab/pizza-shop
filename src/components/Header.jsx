@@ -3,6 +3,7 @@ import SearchInp from "../UI/SearchInp/SearchInp";
 import ThemeToggle from "../UI/ThemeToggle";
 import { useSelector } from "react-redux";
 import { useEffect, useRef } from "react";
+import imgPizzaLogo from "../img/pizza-logo.png";
 
 const Header = () => {
 
@@ -24,7 +25,7 @@ const Header = () => {
       <div className="container">
         <Link to='/'>
           <div className="header__logo">
-            <img width="38" src="img/pizza-logo.png" alt="Pizza logo" />
+            <img width="38" src={imgPizzaLogo} alt="Pizza logo" />
             <div>
               <h1>Super Pizza</h1>
               <p>только попробуй устоять</p>
